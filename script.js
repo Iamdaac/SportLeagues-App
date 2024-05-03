@@ -73,7 +73,8 @@ $('#toggleFechaFin').click(function() {
 });
 
 // Script para sidebar admin
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+const hamBurger = document.querySelector(".toggle-btn");
+
+hamBurger.addEventListener("click", function () {
+    document.querySelector("#sidebar").classList.toggle("expand");
 });
